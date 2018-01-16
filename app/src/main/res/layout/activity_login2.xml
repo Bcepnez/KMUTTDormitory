@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bcepnez.nearbydormitory.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/EmailIcon"
+            android:src="@drawable/cpe30th"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/EmailIcon"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/email"
+            android:hint="Email"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/email"
+            android:hint="Password"
+            android:id="@+id/password"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:id="@+id/buttontab"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:background="#FF8800"
+                android:id="@+id/button"
+                android:text="Sign In"/>
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/button"
+                android:layout_below="@+id/password"
+                android:background="#FF0000"
+                android:textStyle="italic"
+                android:id="@+id/creater"
+                android:textSize="14dp"
+                android:text="Create Account"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/buttontab"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:textStyle="italic"
+            android:textSize="14dp"
+            android:text="Forgot Password"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

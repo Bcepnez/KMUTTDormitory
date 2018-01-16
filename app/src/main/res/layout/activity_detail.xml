@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bcepnez.nearbydormitory.Detail">
+
+    <RelativeLayout
+        android:layout_width="385dp"
+        android:layout_height="566dp"
+        android:id="@+id/detail">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Dormitory Name"
+            android:textColor="#FF8800"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="158dp"
+            android:layout_height="159dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/cpe30th"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="283dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="12dp">
+
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="241dp">
+
+                <TextView
+                    android:id="@+id/AddressText"
+                    android:layout_width="92dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Address"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    tools:layout_editor_absoluteY="241dp" />
+
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="addressView"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                tools:layout_editor_absoluteX="19dp">
+
+                <TextView
+                    android:id="@+id/textCon"
+                    android:layout_width="92dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Contact"
+                    app:layout_constraintEnd_toStartOf="@+id/address"
+                    tools:layout_editor_absoluteY="241dp" />
+
+                <TextView
+                    android:id="@+id/Contactfield"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="contactView"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Contact"
+                tools:layout_editor_absoluteX="19dp">
+
+                <TextView
+                    android:id="@+id/textRate"
+                    android:layout_width="92dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Rate"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    tools:layout_editor_absoluteY="241dp" />
+
+                <TextView
+                    android:id="@+id/ratefield"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="rateView"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Facility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Rate"
+                tools:layout_editor_absoluteX="19dp">
+
+                <TextView
+                    android:id="@+id/textfacility"
+                    android:layout_width="92dp"
+                    android:layout_height="29dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Facility"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    tools:layout_editor_absoluteY="241dp" />
+
+                <TextView
+                    android:id="@+id/facilityfield"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="facilityView"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="110dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
